@@ -1,27 +1,41 @@
-# ConvertCurr
+# Conversor de Moedas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
+Este é um projeto de conversor de moedas simples desenvolvido em Angular. Ele utiliza a API CurrencyBeacon para obter as taxas de conversão atualizadas.
 
-## Development server
+## Funcionalidades
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Seleção das moedas de origem e destino.
+- Digitação do valor a ser convertido.
+- Conversão da moeda com base nas taxas obtidas da API.
+- Exibição do resultado da conversão.
 
-## Code scaffolding
+## Pré-requisitos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node.js e npm instalados no sistema.
 
-## Build
+## Como executar o projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone o repositório para o seu computador.
+2. No diretório raiz do projeto, execute o comando `npm install` para instalar as dependências.
+3. Em seguida, execute o comando `npm start` para iniciar o servidor de desenvolvimento.
+4. Abra o navegador e acesse `http://localhost:4200` para visualizar o aplicativo.
 
-## Running unit tests
+## Configuração da API
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Para acessar a API CurrencyBeacon, é necessário obter uma chave de API. Siga as instruções no site da CurrencyBeacon para obter a sua chave. Após obter a chave, substitua o valor da variável `key` no arquivo `app.component.ts` pela sua chave de API.
 
-## Running end-to-end tests
+## Personalização
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Você pode personalizar o projeto de acordo com suas necessidades. Algumas sugestões de melhorias incluem:
 
-## Further help
+- Adicionar mais moedas à lista de seleção.
+- Melhorar a interface do usuário com estilos adicionais.
+- Implementar tratamento de erros e validação de entrada.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contribuição
+
+Contribuições são bem-vindas! Se você encontrar algum problema ou tiver sugestões de melhorias, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+## Licença
+
+Este projeto está licenciado sob a licença [MIT](LICENSE).

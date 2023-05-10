@@ -1,1 +1,34 @@
+<div class="container">
+  <h2>Conversor de Moedas</h2>
+  <table>
+    <tr>
+      <td>
+        <select name="cambio-i" [(ngModel)]="cur1">
+          <option *ngFor="let item of curArr" [value]="item.abv">{{ item.nome }}</option>
+        </select>
+      </td>
+      <td>
+        <select name="cambio-f" [(ngModel)]="cur2">
+          <option *ngFor="let item of curArr" [value]="item.abv">{{ item.nome }}</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <input type="number" [(ngModel)]="amount" placeholder="Digite o valor">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <button (click)="convertCurrency()">Converter</button>
+      </td>
+    </tr>
+    <tr *ngIf="conversionResult !== null">
+      <td colspan="2" class="result">
+        Resultado da conversão: {{ conversionResult ? (conversionResult | number:'1.2-2') : 'N/A' }}
+      </td>
+    </tr>
+  </table>
+</div>
+
 <router-outlet></router-outlet>
